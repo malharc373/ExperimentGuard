@@ -11,21 +11,21 @@ from .pipeline import AnalysisResult
 from .decision import Decision
 
 _BADGE = {
-    Decision.SHIP: ("✅", "SHIP"),
-    Decision.DO_NOT_SHIP: ("⛔", "DO NOT SHIP"),
-    Decision.CONTINUE: ("⏳", "CONTINUE TESTING"),
+    Decision.SHIP: "SHIP",
+    Decision.DO_NOT_SHIP: "DO NOT SHIP",
+    Decision.CONTINUE: "CONTINUE TESTING",
 }
 
 
 def build_report(result: AnalysisResult) -> str:
     """Return a Markdown experiment report for ``result``."""
     d = result.decision
-    emoji, label = _BADGE[d.decision]
+    label = _BADGE[d.decision]
     lines: list[str] = []
 
     lines.append(f"# ExperimentGuard Report — `{result.experiment_id}`")
     lines.append("")
-    lines.append(f"## {emoji} Decision: **{label}**")
+    lines.append(f"## Decision: **[ {label} ]**")
     lines.append("")
     for reason in d.reasons:
         lines.append(f"- {reason}")

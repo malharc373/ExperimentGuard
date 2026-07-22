@@ -23,7 +23,7 @@ from experimentguard.data import (
 )
 from experimentguard.decision import Decision
 
-st.set_page_config(page_title="ExperimentGuard", page_icon="🛰️", layout="wide")
+st.set_page_config(page_title="ExperimentGuard", layout="wide")
 
 # --------------------------------------------------------------------------- #
 # Design system
