@@ -1,5 +1,7 @@
 # ExperimentGuard — A/B Test Decision Engine
 
+[![CI](https://github.com/malharc373/ExperimentGuard/actions/workflows/ci.yml/badge.svg)](https://github.com/malharc373/ExperimentGuard/actions/workflows/ci.yml)
+
 A reproducible experimentation platform for fintech payment-flow changes. Given a
 control/variant dataset, ExperimentGuard validates the randomisation, measures
 conversion and transaction-value uplift with confidence intervals, monitors
@@ -70,6 +72,9 @@ pytest -q
 # optional interactive demo
 streamlit run app.py
 ```
+
+A rendered sample verdict lives at [`examples/report_winner.html`](examples/report_winner.html)
+(open it in a browser).
 
 ## HTTP API
 
