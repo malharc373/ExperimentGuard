@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Generated sample data / reports (reproduce with scripts/generate_sample_data.py)
+data/*.csv
+data/*.html

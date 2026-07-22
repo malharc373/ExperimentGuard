@@ -1,0 +1,10 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+pytest>=7.0
+httpx>=0.27
+# Optional demo UI (only needed for app.py):
+streamlit>=1.28
